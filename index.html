@@ -411,6 +411,21 @@ footer .fn{color:var(--gold)}
 .note.p{background:#13244e;border-color:#34509a;color:#DCE6FF}
 .note.r{background:#3a0f17;border-color:#8f2a3a;color:#FFD0D6}
 .note.g{background:#0b2e1b;border-color:#2c7a4b;color:#C9F5DA}
+/* v2.5 Web3Forms form states */
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden;display:none!important}
+.w3pre{font-size:14px;margin:4px 0 0;line-height:1.45;color:#CFE0FF}
+.w3pre b{color:#fff}
+.w3photo{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px;font-size:14px}
+.w3ok{background:#0b2e1b;border:2px solid #2fbf6a;color:#C9F5DA;border-radius:14px;padding:14px;margin:12px 0}
+.w3ok h2{color:#7CF0A8;margin:0 0 6px;font-size:21px}
+.w3err{background:#3a0f17;border:2px solid #e0566b;color:#FFD0D6;border-radius:14px;padding:14px;margin:12px 0}
+.w3err h2{color:#FF9AA8;margin:0 0 6px;font-size:20px}
+.w3ref{font-size:14px;opacity:.95;margin-top:6px}
+.w3ref b{color:#fff}
+.btn[disabled]{opacity:.6;cursor:wait}
+#w3ok,#w3err,#sentBox,#w3pre{scroll-margin-top:96px}
+.ver{font-size:13px;opacity:.85}
+.ver .new{display:inline-block;background:#1E9E4A;color:#fff;border-radius:999px;padding:1px 9px;margin-right:6px;font-weight:700}
 .note a{color:#fff}
 label.f{color:#DCE6FF}
 label.f .req,.req{color:#FF8A8A!important}
@@ -911,6 +926,7 @@ html.lb-open,html.lb-open body{overflow:hidden}
   <a class="box ic" href="#demand"><span class="c" style="background:#E3F6EA;color:#14803A"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 4.5V3h6v1.5"/><path d="M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg></span>ग्राहकांची मागणी<small>प्रॉपर्टी / सेवा / कामगार हवे</small></a>
   <a class="box ic" href="#referrer"><span class="c" style="background:#E3F6EA;color:#14803A"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="m8 9 1.5 1.5L12 8M14 9.5h2.5M8 15l1.5 1.5L12 14M14 15.5h2.5"/></svg></span>माहिती देणारे<small>(Referrer) नोंदणी</small></a>
   <a class="box ic" href="#complaint"><span class="c" style="background:#FDE7EF;color:#B3245A"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2.5 20h19z"/><path d="M12 10v4.5M12 17.2v.3"/></svg></span>तक्रार नोंदवा<small>बनावट / दिशाभूल</small></a>
+  <a class="box ic" href="#contact"><span class="c" style="background:#E2EEFC;color:#1559B3"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span>संपर्क / चौकशी<small>प्रश्न थेट Admin कडे</small></a>
  </div>
 </div></section>
 
@@ -996,7 +1012,7 @@ html.lb-open,html.lb-open body{overflow:hidden}
 <section class="view gd" data-view="guide" hidden><div class="wrap page">
  <a class="back" href="#home">← मुख्यपृष्ठ</a>
  <div class="ph b"><h1>वापर मार्गदर्शिका</h1><p>महाराष्ट्र प्रॉपर्टी व रोजगार सेतू · जोडूया संधी… घडवूया भविष्य…</p></div>
- <div class="note g"><b>सहकार्यातून समृद्धीकडे.</b> सुरुवात: आळंदी देवाची, ता. खेड, जि. पुणे · लवकरच: संपूर्ण महाराष्ट्र · संपर्क / WhatsApp: <a href="#" data-wa="contact">+91 77750 57917</a></div>
+ <div class="note g"><b>सहकार्यातून समृद्धीकडे.</b> सुरुवात: आळंदी देवाची, ता. खेड, जि. पुणे · लवकरच: संपूर्ण महाराष्ट्र · संपर्क / WhatsApp: <a href="#" data-wa="contact">+91 77750 57917</a> · <a href="#contact">✉️ चौकशी फॉर्म</a></div>
  <nav class="gtoc" aria-label="मार्गदर्शिकेचे भाग"><a href="#guide" data-gto="g1">१. मंच काय आहे</a><a href="#guide" data-gto="g2">२. कोणासाठी</a><a href="#guide" data-gto="g3">३. मुख्य विभाग</a><a href="#guide" data-gto="g4">४. पावलोपावली</a><a href="#guide" data-gto="g5">५. स्मार्ट सहाय्यक</a><a href="#guide" data-gto="g6">६. कमाई</a><a href="#guide" data-gto="g7">७. सुरक्षितता</a><a href="#guide" data-gto="g8">८. स्थिती व टप्पे</a><a href="#guide" data-gto="g9">९. प्रश्न</a></nav>
 
  <div class="box gsec" id="g1"><h2><span class="n">१</span>हा मंच काय आहे?</h2>
@@ -1045,7 +1061,7 @@ html.lb-open,html.lb-open body{overflow:hidden}
   <h3>👷 काम शोधणाऱ्यांसाठी</h3>
   <p>“<a href="#seva">सेवा Directory</a>” मधून तुमच्या गावाजवळचे व्यावसायिक (मिस्त्री, ठेकेदार, इंजिनिअर) शोधून कामासाठी संपर्क करा आणि “<a href="#job">काम हवे — नोंदणी</a>” फॉर्मने स्वतःची माहिती नोंदवा.</p>
   <h3>📝 नोंदणी कशी करायची?</h3>
-  <p>सध्या WhatsApp वर <a href="#" data-wa="register">+91 77750 57917</a> या क्रमांकावर तुमचे नाव, गाव आणि व्यवसाय पाठवा, किंवा “<a href="#register">नोंदणी करा</a>” पानावरील फॉर्म भरा (तोही WhatsApp वरच येतो). नोंदणी मोफत आहे.</p></div>
+  <p>सध्या WhatsApp वर <a href="#" data-wa="register">+91 77750 57917</a> या क्रमांकावर तुमचे नाव, गाव आणि व्यवसाय पाठवा, किंवा “<a href="#register">नोंदणी करा</a>” पानावरील फॉर्म भरा (तो थेट Admin च्या ईमेलवर किंवा WhatsApp वर येतो). नोंदणी मोफत आहे.</p></div>
 
  <div class="box gsec" id="g5"><h2><span class="n">५</span>जाहिरात स्मार्ट सहाय्यक (साचे) कसा वापरायचा?</h2>
   <ol class="gs">
@@ -1075,7 +1091,7 @@ html.lb-open,html.lb-open body{overflow:hidden}
   </ol></div>
 
  <div class="box gsec" id="g8"><h2><span class="n">८</span>सध्याची स्थिती आणि पुढील टप्पे</h2>
-  <p><span class="live">✓ आत्ता चालू</span> ही साईट सार्वजनिक पत्त्यावर सुरू आहे — कोणीही मोबाईलवर उघडू शकतो. सर्व नोंदणी फॉर्म थेट Admin च्या WhatsApp वर (+91 77750 57917) पोहोचतात; Admin तपासणी करूनच नोंद यादीत टाकतात. ही वेबसाइट स्वतः तुमची माहिती साठवत नाही.</p>
+  <p><span class="live">✓ आत्ता चालू</span> ही साईट सार्वजनिक पत्त्यावर सुरू आहे — कोणीही मोबाईलवर उघडू शकतो. सर्व नोंदणी फॉर्म थेट Admin च्या ईमेलवर (Web3Forms मार्फत) किंवा WhatsApp वर (+91 77750 57917) पोहोचतात; Admin तपासणी करूनच नोंद यादीत टाकतात. ही वेबसाइट स्वतः तुमची माहिती साठवत नाही.</p>
   <p><b>पुढील टप्पे:</b> सर्वांना दिसणारा डेटाबेस, मोबाईल OTP नोंदणी, Admin पासवर्ड व डॅशबोर्ड, फोटो अपलोड, Referrer ID व “माझी कमाई” पान. Android/iOS app त्यानंतर विचारात घेतली जाईल. <a href="#home" data-to-road="1">पुढील टप्पे पाहा →</a></p></div>
 
  <div class="box gsec" id="g9"><h2><span class="n">९</span>वारंवार विचारले जाणारे प्रश्न</h2>
@@ -1146,8 +1162,9 @@ html.lb-open,html.lb-open body{overflow:hidden}
  <div class="fpills"><span><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 4.5V3h6v1.5"/><path d="M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg>मोफत नोंदणी</span><span><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8-7.5 9.5-4.3-1.5-7.5-4.9-7.5-9.5V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>सर्व जाती धर्मासाठी</span><span><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l3-3 4 1 3-2 4 1 4 2-2 4 1 3-4 2-3 3-5 1-3-3-1-4z"/><circle cx="11" cy="12" r="1.6"/></svg>संपूर्ण महाराष्ट्र</span></div>
  <div class="fb"><div style="display:flex;gap:10px;align-items:center"><span style="width:54px;height:46px;display:block;background:#fff;border-radius:12px;padding:3px"><svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="सेतू लोगो"><defs><linearGradient id="lgS2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB547"/><stop offset="1" stop-color="#F26B0F"/></linearGradient></defs><path d="M8 30 L14 26 L20 27 L24 22 L31 23 L36 18 L44 20 L50 15 L58 17 L64 12 L72 14 L80 9 L89 11 L97 8 L106 12 L113 18 L110 26 L104 29 L106 36 L99 39 L96 46 L88 47 L84 53 L76 56 L70 63 L62 65 L57 72 L48 74 L42 81 L34 82 L27 88 L19 90 L15 84 L13 74 L11 62 L10 50 L8 40 Z" fill="url(#lgS2)" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M36 42 L60 22 L84 42" fill="none" stroke="#4B1F8C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M43 39 V58 H77 V39" fill="#fff" stroke="#4B1F8C" stroke-width="4" stroke-linejoin="round"/><rect x="55" y="43" width="10" height="9" rx="1" fill="#4B1F8C"/><path d="M60 43v9M55 47.5h10" stroke="#fff" stroke-width="1.4"/><circle cx="44" cy="64" r="5.5" fill="#6A2BC2"/><path d="M34 84c0-7 4.5-12 10-12s10 5 10 12z" fill="#6A2BC2"/><circle cx="76" cy="64" r="5.5" fill="#1E9E4A"/><path d="M66 84c0-7 4.5-12 10-12s10 5 10 12z" fill="#1E9E4A"/><circle cx="60" cy="66" r="6.5" fill="#2E0F5E"/><path d="M48 90c0-8.5 5.4-14 12-14s12 5.5 12 14z" fill="#2E0F5E" stroke="#fff" stroke-width="1.5"/></svg></span><div><div class="fn">महाराष्ट्र प्रॉपर्टी व रोजगार सेतू</div><div class="ft">सहकार्यातून समृद्धीकडे · एकत्र येऊया… संधी निर्माण करूया…</div></div></div>
  <div class="soc" aria-label="सोशल मीडिया — लवकरच">Follow Us <span class="s" title="Facebook — लवकरच">f</span><span class="s" title="Instagram — लवकरच">◎</span><span class="s" title="YouTube — लवकरच">▶</span><span class="s" title="X — लवकरच">𝕏</span><span style="opacity:.75">(लवकरच)</span></div></div>
- <div class="links"><a href="#guide">📘 वापर मार्गदर्शिका</a><a href="#referrer">माहिती देणारे (Referrer) नोंदणी</a><a href="#rules">नियम व विश्वासार्हता</a><a href="#admin">प्रशासक — पडताळणी</a><a href="#team">आमची टीम</a><a href="#complaint">तक्रार नोंदवा</a><a href="#demand">ग्राहकांची मागणी</a><a href="#land">जमीन / प्लॉट जाहिराती</a><a href="#register">नोंदणी</a><a href="#" data-wa="contact">WhatsApp: +91 77750 57917</a><a href="https://santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune/" target="_blank" rel="noopener">Digital Aarambh AI — दुकानदारांसाठी ↗</a></div>
- <p><b>गोपनीयता:</b> ही वेबसाइट तुमची माहिती साठवत नाही. फॉर्म भरल्यावर माहिती फक्त तुम्ही WhatsApp वर पाठवल्यासच आमच्याकडे येते, आणि तुमच्या परवानगीशिवाय तुमचा नंबर सार्वजनिक केला जात नाही.</p>
+ <div class="links"><a href="#guide">📘 वापर मार्गदर्शिका</a><a href="#referrer">माहिती देणारे (Referrer) नोंदणी</a><a href="#rules">नियम व विश्वासार्हता</a><a href="#admin">प्रशासक — पडताळणी</a><a href="#team">आमची टीम</a><a href="#complaint">तक्रार नोंदवा</a><a href="#demand">ग्राहकांची मागणी</a><a href="#land">जमीन / प्लॉट जाहिराती</a><a href="#register">नोंदणी</a><a href="#contact">संपर्क / चौकशी</a><a href="#" data-wa="contact">WhatsApp: +91 77750 57917</a><a href="https://santoshujgare555-a11y.github.io/digital-aarambh-ai-prarambh-pune/" target="_blank" rel="noopener">Digital Aarambh AI — दुकानदारांसाठी ↗</a></div>
+ <p><b>गोपनीयता:</b> ही वेबसाइट तुमची माहिती स्वतः (सर्व्हरवर) साठवत नाही. जाहिरात / नोंदणी / चौकशी फॉर्ममध्ये “पाठवा” दाबल्यावर तुम्ही भरलेली माहिती Web3Forms (ईमेल-फॉर्म सेवा) मार्फत फक्त महा सेतू Admin च्या ईमेलवर पोहोचवली जाते; WhatsApp पर्याय वापरल्यास ती तुमच्या WhatsApp मधून Admin कडे जाते. तुमच्या परवानगीशिवाय तुमचा नंबर सार्वजनिक केला जात नाही.</p>
+  <p class="ver"><span class="new">🆕 v2.5</span>“जाहिरात द्या” आणि सर्व नोंदणी फॉर्म आता थेट Admin च्या ईमेलवर पोहोचतात · नवीन “संपर्क / चौकशी” फॉर्म · आवृत्ती v2.5</p>
  <p>संकल्पना: S. R. Ujgare, आळंदी देवाची<br>© 2026 संतोष उजगरे, सर्व हक्क राखीव</p>
 </div></footer>
 <div class="goldband"><div class="wrap"><span>|| महाराष्ट्र प्रॉपर्टी व रोजगार सेतू ||</span> <span>सहकार्यातून समृद्धीकडे ||</span></div></div>
@@ -1155,8 +1172,14 @@ html.lb-open,html.lb-open body{overflow:hidden}
 <nav class="bnav" aria-label="तळाचा मेनू"><a href="#home" data-nav="home"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3.5 21 11"/><path d="M5.5 9.5V20h13V9.5"/></svg>होम</a><a href="#find" data-nav="find"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>शोधा</a><a href="#register" data-nav="register"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>नोंदणी</a><a href="#account" data-nav="account"><svg viewBox="0 0 24 24" class="" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c.8-4 3.8-6.5 7.5-6.5s6.7 2.5 7.5 6.5"/></svg>माझे खाते</a></nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
+/* ===== v2.5: Web3Forms — फॉर्म थेट Admin (संतोष) च्या ईमेलवर =====
+   👇 खालील ओळीत Web3Forms Access Key टाका (web3forms.com वरून ईमेलवर आलेली).
+   ही key HTML मध्ये उघडी असणेच अपेक्षित आहे (पासवर्ड नाही). key नसेल तर फॉर्म WhatsApp वर पाठवतो. */
+const W3F_KEY = 'ea75c5ca-25e2-4ed9-85ae-1f437762a0a9';
+const W3F_URL = "https://api.web3forms.com/submit";
+const APP_VER = "v2.5";
 /* =====================================================================
-   महाराष्ट्र प्रॉपर्टी व रोजगार सेतू — v1.1 (client-side only)
+   महाराष्ट्र प्रॉपर्टी व रोजगार सेतू — v2.5 (client-side; forms → Web3Forms email, WhatsApp fallback)
    DATA: Admin-verified entries are added by hand to these arrays.
    Ship EMPTY — no fake data. Copy the example shape, remove the //.
    ===================================================================== */
@@ -1387,15 +1410,16 @@ const F = {
   taluka:{k:"taluka",l:"तालुका",s:"तालुका",req:1,ph:"उदा. खेड"},
   district:{k:"district",l:"जिल्हा",s:"जिल्हा",req:1,type:"select",opts:"DISTRICTS",def:"पुणे"},
   ref:{k:"ref",l:"संदर्भ / माहिती देणाऱ्याचा ID (असल्यास)",s:"संदर्भ",ph:"ऐच्छिक"},
+  districtPune:{k:"district",l:"जिल्हा",s:"जिल्हा",req:1,type:"select",opts:["पुणे"],def:"पुणे",hint:"सध्या फक्त पुणे जिल्ह्यातील जाहिराती स्वीकारल्या जातात."},
   REra:{k:"rera",l:"MahaRERA एजंट नोंदणी क्रमांक (ऐच्छिक)",s:"MahaRERA एजंट नोंदणी क्र.",ph:"उदा. A5xxxxxxxxxx",full:1,showIf:v=>v.business===AGENT_BIZ,hint:"प्रॉपर्टी एजंट / ब्रोकर म्हणून काम करण्यासाठी MahaRERA नोंदणी आवश्यक असू शकते. क्रमांक असल्यास लिहा — Admin तो MahaRERA च्या अधिकृत वेबसाइटवर तपासेल आणि नंतरच यादीत दाखवेल."}
 };
 const isWant = m => m==="खरेदी हवी"||m==="भाड्याने घेणे";
 const FORMS = {
- post:{title:"प्रॉपर्टी नोंदवा",sub:"शेतजमीन, प्लॉट, घर, फ्लॅट, दुकान, गोडाऊन — विक्री किंवा भाड्याने",cls:"",head:"🏠 *नवीन प्रॉपर्टी नोंदणी*",
+ post:{title:"प्रॉपर्टी नोंदवा",sub:"जाहिरात द्या — शेतजमीन, प्लॉट, घर, फ्लॅट, दुकान, गोडाऊन — विक्री किंवा भाड्याने (पुणे जिल्हा)",ad:1,photos:1,cls:"",head:"🏠 *नवीन प्रॉपर्टी नोंदणी*",
   notes:[["y","<b>मालकाची संमती आवश्यक.</b> स्वतःची प्रॉपर्टी किंवा मालकाची स्पष्ट परवानगी असलेलीच प्रॉपर्टी नोंदवा. नोंदीवर “कागदपत्र पडताळणी: बाकी” असे दिसेल — या वेबसाइटकडून मालकी हक्काची पडताळणी केली जात नाही."],["p","प्रॉपर्टी दलाली / एजंट म्हणून काम करण्यासाठी MahaRERA नोंदणी आवश्यक असू शकते. कोणतेही कमिशन/शुल्क संबंधित पक्षांनी आधी लेखी ठरवावे."]],
   fields:[{k:"who",l:"तुम्ही कोण?",s:"नोंदवणारा",req:1,type:"seg",opts:["मालक स्वतः","मालकाचा प्रतिनिधी","एजंट / माहिती देणारा"],full:1,showIf:v=>!isWant(v.mode)},
    F.name,F.phone,{k:"mode",l:"व्यवहार",s:"व्यवहार",req:1,type:"seg",opts:["विक्री","भाडे","खरेदी हवी","भाड्याने घेणे"]},
-   {k:"ptype",l:"प्रॉपर्टीचा प्रकार",s:"प्रकार",req:1,type:"select",opts:"PTYPES"},F.village,F.taluka,F.district,
+   {k:"ptype",l:"प्रॉपर्टीचा प्रकार",s:"प्रकार",req:1,type:"select",opts:"PTYPES"},F.village,F.taluka,F.districtPune,
    {k:"area",l:"क्षेत्रफळ",s:"क्षेत्रफळ",req:v=>!isWant(v.mode),type:"area"},
    {k:"price",l:"अपेक्षित किंमत / मासिक भाडे / बजेट (₹)",s:"अपेक्षित किंमत",req:1,type:"number",ph:"उदा. 1500000"},
    {k:"gat",l:"गट / सर्वे नंबर (ऐच्छिक)",s:"गट / सर्वे नं.",ph:"उदा. गट नं. 123",showIf:v=>!isWant(v.mode)},
@@ -1409,7 +1433,7 @@ const FORMS = {
   head:v=>isWant(v.mode)?`🔎 *प्रॉपर्टी हवी — ${v.mode}*`:"🏠 *नवीन प्रॉपर्टी नोंदणी*",
   extra:(v)=> (!isWant(v.mode)&&v.who&&v.who!=="मालक स्वतः"&&!v.owner.trim())?{owner:"प्रतिनिधी / एजंट असल्यास मालकाचे नाव आवश्यक"}:null,
   tail:v=>isWant(v.mode)?[]:["कागदपत्र पडताळणी: बाकी","📷 फोटो / व्हिडिओ पुढील मेसेजमध्ये पाठवत आहे."]},
- sevareg:{title:"माझी सेवा नोंदवा",sub:"व्यावसायिक प्रोफाइल — आर्किटेक्ट, प्लंबर, JCB, साहित्य विक्रेते, वकील…",cls:"s",head:"🛠️ *व्यावसायिक प्रोफाइल नोंदणी*",
+ sevareg:{title:"माझी सेवा नोंदवा",ad:1,photos:1,sub:"व्यावसायिक प्रोफाइल — आर्किटेक्ट, प्लंबर, JCB, साहित्य विक्रेते, वकील…",cls:"s",head:"🛠️ *व्यावसायिक प्रोफाइल नोंदणी*",
   notes:[["p","नोंदणी मोफत आहे. ग्राहक मिळण्याची किंवा ठरावीक उत्पन्नाची हमी दिली जात नाही."]],
   fields:[F.name,{k:"business",l:"व्यवसाय",s:"व्यवसाय",req:1,type:"select",opts:"BUSINESSES"},{k:"other",l:"व्यवसाय “इतर” असल्यास नाव लिहा",s:"इतर व्यवसाय",showIf:v=>v.business==="इतर"},F.REra,F.phone,F.village,F.taluka,F.district,
    {k:"exp",l:"अनुभव (वर्षे)",s:"अनुभव (वर्षे)",type:"number",ph:"उदा. 5"},{k:"areaServed",l:"कुठे कुठे सेवा देता?",s:"सेवा क्षेत्र",ph:"उदा. आळंदी, चाकण, खेड"},
@@ -1425,7 +1449,7 @@ const FORMS = {
    {k:"desc",l:"तुमच्याबद्दल थोडक्यात",s:"माहिती",type:"textarea",full:1},
    {k:"consent",l:"मी दिलेली माहिती खरी आहे. भागीदारीत उत्पन्नाची कोणतीही हमी नाही हे मला मान्य आहे.",s:"अटी मान्य",req:1,type:"check",full:1}],
   tail:[]},
- job:{title:"काम हवे — नोंदणी",sub:"बेरोजगार / काम शोधणाऱ्यांसाठी मोफत नोंदणी",cls:"g",head:"👷 *काम शोधणारा — नोंदणी*",
+ job:{title:"काम हवे — नोंदणी",ad:1,sub:"बेरोजगार / काम शोधणाऱ्यांसाठी मोफत नोंदणी",cls:"g",head:"👷 *काम शोधणारा — नोंदणी*",
   notes:[["p","नोंदणी मोफत आहे. योग्य काम आले की संपर्क होईल; नोकरीची हमी दिली जात नाही. कोणीही नोकरीसाठी पैसे मागितल्यास <a href='#complaint'>तक्रार करा</a>."]],
   fields:[F.name,F.phone,{k:"age",l:"वय",s:"वय",type:"number",ph:"उदा. 28"},{k:"work",l:"कोणते काम हवे?",s:"काम",req:1,type:"select",opts:"WORKS"},
    {k:"exp",l:"अनुभव",s:"अनुभव",ph:"उदा. 3 वर्षे गवंडी काम"},{k:"edu",l:"शिक्षण",s:"शिक्षण",ph:"ऐच्छिक"},F.village,F.taluka,F.district,
@@ -1450,7 +1474,24 @@ const FORMS = {
   notes:[["r","तुमची तक्रार Admin कडे WhatsApp वर जाईल. संबंधित नोंद तपासून गरज असल्यास यादीतून काढली जाईल. फसवणूक झाली असल्यास पोलिसांकडेही तक्रार करा."]],
   fields:[F.name,F.phone,{k:"ctype",l:"तक्रारीचा प्रकार",s:"प्रकार",req:1,type:"select",opts:["बनावट प्रॉपर्टी","खोटी कागदपत्रे","दिशाभूल करणारी जाहिरात","सेवा देणाऱ्याबद्दल तक्रार","नोकरीसाठी पैसे मागितले","माझी माहिती संमतीशिवाय दाखवली","इतर"]},
    {k:"refid",l:"संबंधित नोंदीचा ID (असल्यास)",s:"नोंद ID",ph:"उदा. P-0001"},{k:"detail",l:"तक्रारीचा तपशील",s:"तपशील",req:1,type:"textarea",full:1}],
+  tail:[]},
+ contact:{title:"संपर्क / चौकशी",sub:"प्रश्न, सूचना किंवा चौकशी — थेट महा सेतू टीमकडे",cls:"g",head:"💬 *संपर्क / चौकशी*",back:["#home","← मुख्यपृष्ठ"],
+  notes:[["p","तुमचा प्रश्न थेट Admin कडे पोहोचतो. उत्तर फोन / WhatsApp वर दिले जाईल."]],
+  fields:[F.name,F.phone,{k:"topic",l:"विषय",s:"विषय",req:1,type:"select",opts:["प्रॉपर्टी","काम / नोकरी","सेवा / व्यावसायिक","जाहिरात / वेबसाइट","इतर"]},
+   {k:"village",l:"गाव (ऐच्छिक)",s:"गाव",ph:"उदा. आळंदी"},
+   {k:"msg",l:"तुमचा प्रश्न / संदेश",s:"संदेश",req:1,type:"textarea",full:1,ph:"उदा. आळंदी परिसरात 2 गुंठे प्लॉट उपलब्ध आहे का?"}],
   tail:[]}
+};
+/* v2.5: ईमेल विषयासाठी प्रकार (category) */
+const W3CAT = {
+  post:v=>["प्रॉपर्टी",v.ptype,v.mode].filter(Boolean).join(" · "),
+  sevareg:v=>["सेवा",v.business==="इतर"&&v.other?v.other:v.business].filter(Boolean).join(" · "),
+  job:v=>["काम हवे",v.work].filter(Boolean).join(" · "),
+  partner:v=>["भागीदार",v.ptype2].filter(Boolean).join(" · "),
+  demand:v=>["मागणी",v.need].filter(Boolean).join(" · "),
+  referrer:()=>"Referrer नोंदणी",
+  complaint:v=>["तक्रार",v.ctype].filter(Boolean).join(" · "),
+  contact:v=>["चौकशी",v.topic].filter(Boolean).join(" · ")
 };
 function fieldHTML(f,pre){
   const id="f_"+f.k, rq=f.req===1?' <span class="req">*</span>':typeof f.req==="function"?' <span class="req rqd">*</span>':"", full=f.full?" full":"";
@@ -1475,16 +1516,27 @@ function applyShow(key,form){
     const r=w.querySelector(".rqd"); if(r)r.hidden=!isReq(f,v); if(!on){ const er=$("#e_"+f.k); if(er)er.textContent=""; w.querySelectorAll(".bad").forEach(x=>x.classList.remove("bad")); w.classList.remove("bad"); } });
   if(key==="post"){ const pw=form.querySelector('[data-wrap="price"]'); if(pw&&pw.firstChild&&pw.firstChild.nodeType===3) pw.firstChild.textContent=isWant(v.mode)?"बजेट (₹) ":v.mode==="भाडे"?"मासिक भाडे (₹) ":"अपेक्षित किंमत (₹) "; }
 }
+function w3fReady(){ return typeof W3F_KEY==="string" && W3F_KEY!=="PASTE_WEB3FORMS_KEY" && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(W3F_KEY.trim()); }
+function adWord(key){ return FORMS[key]&&FORMS[key].ad?"जाहिरात":"माहिती"; }
+/* v2.5: जाहिरातीचे छोटे शीर्षक (फोटो मेसेज व ईमेल विषयासाठी) */
+function adTitle(key,v){ const cat=W3CAT[key]?W3CAT[key](v):FORMS[key].title; return [cat,v.village,v.name].filter(Boolean).join(" — "); }
+function photoLink(key,v){ return waLink(`नमस्कार, ${SITE} — "${adTitle(key,v)}" या ${FORMS[key].ad?"जाहिरातीचे":"नोंदणीचे"} फोटो पाठवत आहे 📷`); }
 function renderForm(key,pre){
-  const S=FORMS[key]; curForm=key;
-  $("#formView").innerHTML=`<a class="back" href="#register">← नोंदणी पर्याय</a><div class="ph ${S.cls}"><h1>${esc(S.title)}</h1><p>${esc(S.sub)}</p></div>
-   <div class="note g"><b>${ADMIN_NOTE}</b> “WhatsApp वर पाठवा” दाबल्यावर ही माहिती तयार मेसेजच्या रूपात तुमच्या WhatsApp मध्ये उघडेल; तिथे “Send” दाबा.</div>
+  const S=FORMS[key]; curForm=key; const W=adWord(key), ready=w3fReady(); const back=S.back||["#register","← नोंदणी पर्याय"];
+  $("#formView").innerHTML=`<a class="back" href="${back[0]}">${back[1]}</a><div class="ph ${S.cls}"><h1>${esc(S.title)}</h1><p>${esc(S.sub)}</p></div>
+   <div class="note g"><b>${ADMIN_NOTE}</b> ${ready?`“${W} पाठवा” दाबल्यावर ही माहिती थेट महा सेतू Admin च्या ईमेलवर पोहोचते.`:`“WhatsApp वर पाठवा” दाबल्यावर ही माहिती तयार मेसेजच्या रूपात तुमच्या WhatsApp मध्ये उघडेल; तिथे “Send” दाबा.`}</div>
    ${S.notes.map(([c,t])=>`<div class="note ${c}">${t}</div>`).join("")}
    <form class="box" id="theForm" novalidate data-form="${key}"><div class="fgrid">${S.fields.map(f=>fieldHTML(f,pre)).join("")}</div>
-   <div class="sendrow"><button class="btn btn-w" type="submit">${WA_ICON} WhatsApp वर पाठवा</button><span style="font-size:13px;color:var(--mut)"><span class="req" style="color:#d22">*</span> आवश्यक माहिती</span></div></form>
-   <div class="box" id="sentBox" hidden><h2>मेसेज तयार ✓</h2><p>WhatsApp उघडले नसेल तर खालील बटण दाबा. Admin पडताळणीनंतरच नोंद यादीत दिसेल.</p><div class="preview" id="msgPreview"></div><div class="sendrow"><a class="btn btn-w" id="sentLink" href="#" target="_blank" rel="noopener">${WA_ICON} WhatsApp उघडा</a><button class="btn btn-o btn-sm" type="button" id="copyMsg">मेसेज कॉपी करा</button></div></div>`;
+   <label class="hp" aria-hidden="true">Bot check<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+   ${S.photos?`<div class="note p w3photo" id="photoNote"><span>📷 <b>फोटो WhatsApp वर पाठवा</b> — फॉर्ममध्ये फोटो जोडता येत नाहीत.</span><a class="btn btn-w btn-sm" id="photoLink" href="${photoLink(key,{})}" target="_blank" rel="noopener">${WA_ICON} फोटो पाठवा (+91 77750 57917)</a></div>`:""}
+   <p class="w3pre" id="w3pre">🔍 ${S.ad||key==="partner"||key==="referrer"?`तुमची ${W} तपासणीसाठी महा सेतू टीमकडे जाईल; मंजुरीनंतर प्रसिद्ध होईल.`:"तुमची माहिती थेट महा सेतू टीमकडे जाईल; Admin तपासून तुम्हाला संपर्क करतील."}</p>
+   <div class="sendrow"><button class="btn ${ready?"btn-p":"btn-w"}" type="submit" id="w3Submit">${ready?`📨 ${W} पाठवा`:`${WA_ICON} WhatsApp वर पाठवा`}</button><span style="font-size:13px;color:var(--mut)"><span class="req" style="color:#d22">*</span> आवश्यक माहिती</span></div></form>
+   <div class="w3ok" id="w3ok" hidden role="status" aria-live="polite"></div>
+   <div class="w3err" id="w3err" hidden role="alert"></div>
+   <div class="box" id="sentBox" hidden><h2 id="sentH">मेसेज तयार ✓</h2><p id="sentP">WhatsApp उघडले नसेल तर खालील बटण दाबा. Admin पडताळणीनंतरच नोंद यादीत दिसेल.</p><div class="preview" id="msgPreview"></div><div class="sendrow"><a class="btn btn-w" id="sentLink" href="#" target="_blank" rel="noopener">${WA_ICON} WhatsApp वर पाठवा</a><button class="btn btn-o btn-sm" type="button" id="copyMsg">मेसेज कॉपी करा</button></div></div>`;
   $("#theForm").addEventListener("submit",submitForm);
-  ["input","change"].forEach(ev=>$("#theForm").addEventListener(ev,()=>applyShow(key,$("#theForm")))); applyShow(key,$("#theForm"));
+  const upd=()=>{ applyShow(key,$("#theForm")); const pl=$("#photoLink"); if(pl) pl.href=photoLink(key,formVals(key,$("#theForm"))); };
+  ["input","change"].forEach(ev=>$("#theForm").addEventListener(ev,upd)); upd();
   $("#theForm").addEventListener("input",e=>{ const w=e.target.closest("[data-k]"); if(w){ w.querySelectorAll(".bad").forEach(x=>x.classList.remove("bad")); w.classList.remove("bad"); const er=$("#e_"+w.dataset.k); if(er)er.textContent=""; }});
 }
 function validateForm(key,form){
@@ -1500,31 +1552,104 @@ function validateForm(key,form){
   if(S.extra){ const e=S.extra(v); if(e)Object.assign(errs,e); }
   return {v,errs};
 }
-function buildMessage(key,v){
-  const S=FORMS[key]; const want=key==="post"&&isWant(v.mode); const L=[`*${SITE}*`,typeof S.head==="function"?S.head(v):S.head,""];
+/* v2.5: एकाच ठिकाणी सर्व भरलेली माहिती [लेबल, मूल्य] — WhatsApp मेसेज व ईमेल दोन्हीसाठी */
+function msgPairs(key,v){
+  const S=FORMS[key]; const want=key==="post"&&isWant(v.mode); const P=[];
   S.fields.forEach(f=>{ if(f.type==="check")return; if(!isShown(f,v))return; let x=v[f.k]; if(!x)return;
     if(f.type==="tel")x=cleanPhone(x);
     if(f.k==="area")x=`${x} ${v.unit}`;
     if(f.k==="price"||(f.k==="budget"&&/^\d+$/.test(x)))x=`${fmtINR(x)} (${priceWords(x)})${f.k==="price"&&(v.mode==="भाडे"||v.mode==="भाड्याने घेणे")?" / महिना":""}`;
     if(f.k==="exp"&&key==="sevareg")x=`${x} वर्षे`;
-    L.push(`${f.k==="price"&&want?"बजेट":f.k==="price"&&v.mode==="भाडे"?"मासिक भाडे":f.s}: ${x}`); });
+    P.push([f.k==="price"&&want?"बजेट":f.k==="price"&&v.mode==="भाडे"?"मासिक भाडे":f.s, x]); });
+  return P;
+}
+function buildMessage(key,v){
+  const S=FORMS[key]; const L=[`*${SITE}*`,typeof S.head==="function"?S.head(v):S.head,""];
+  msgPairs(key,v).forEach(([l,x])=>L.push(`${l}: ${x}`));
   S.fields.filter(f=>f.type==="check"&&isShown(f,v)).forEach(c=>L.push(`✅ ${c.s}: होय`));
   (typeof S.tail==="function"?S.tail(v):(S.tail||[])).forEach(t=>L.push(t));
   L.push("", `ℹ️ ${ADMIN_NOTE}`);
   return L.join("\n");
 }
-function submitForm(e){
+/* v2.5: Web3Forms */
+function w3fSubject(key,v){ const S=FORMS[key], cat=W3CAT[key]?W3CAT[key](v):S.title;
+  return S.ad?`महा सेतू: नवीन जाहिरात — ${cat} — ${v.name}`:`महा सेतू: ${S.title} — ${cat} — ${v.name}`; }
+function refStamp(d){ d=d||new Date(); const p=n=>String(n).padStart(2,"0");
+  const id=`MS-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
+  let t; try{ t=d.toLocaleString("mr-IN",{day:"numeric",month:"long",year:"numeric",hour:"numeric",minute:"2-digit"}); }catch(e){ t=d.toString(); }
+  return {id,time:t}; }
+function w3fPayload(key,v,ref){
+  const S=FORMS[key];
+  const p={access_key:W3F_KEY, subject:w3fSubject(key,v), from_name:"महा सेतू वेबसाइट", botcheck:false, "फॉर्म":S.title};
+  msgPairs(key,v).forEach(([l,x])=>{ p[l]=x; });
+  S.fields.filter(f=>f.type==="check"&&isShown(f,v)).forEach(c=>{ p[c.s]="होय"; });
+  if(S.photos) p["फोटो"]="फॉर्मसोबत फोटो नाहीत — WhatsApp (+91 77750 57917) वर स्वतंत्र येतील";
+  if(key==="post"&&!isWant(v.mode)) p["कागदपत्र पडताळणी"]="बाकी";
+  p["संदर्भ क्रमांक"]=ref.id; p["वेळ"]=ref.time; p["पान"]=location.href.split("#")[0]+"#"+key; p["आवृत्ती"]=APP_VER;
+  return p;
+}
+function w3Hide(){ ["#w3ok","#w3err","#sentBox"].forEach(q=>{ const e=$(q); if(e)e.hidden=true; }); }
+function showSuccess(key,v,ref){
+  const W=adWord(key), S=FORMS[key]; w3Hide(); $("#theForm").hidden=true; const pn=$("#photoNote"); 
+  const ok=$("#w3ok");
+  ok.innerHTML=`<h2>✅ ${W} मिळाली! आम्ही लवकरच संपर्क करू</h2>
+   <p>तुमची ${W} महा सेतू टीमकडे पोहोचली आहे. ${S.ad?"तपासणी व मंजुरीनंतरच ती प्रसिद्ध होईल.":"Admin तपासून तुम्हाला संपर्क करतील."}</p>
+   <div class="w3ref">संदर्भ क्रमांक: <b id="w3RefId">${esc(ref.id)}</b><br>वेळ: <b id="w3RefTime">${esc(ref.time)}</b></div>
+   ${S.photos?`<div class="w3photo"><span>📷 फोटो असतील तर आता WhatsApp वर पाठवा:</span><a class="btn btn-w btn-sm" id="okPhoto" href="${photoLink(key,v)}" target="_blank" rel="noopener">${WA_ICON} फोटो पाठवा</a></div>`:""}
+   <div class="sendrow"><button class="btn btn-o btn-sm" type="button" id="w3Again">नवीन ${W} भरा</button><a class="btn btn-o btn-sm" href="#home">मुख्यपृष्ठ</a></div>`;
+  ok.hidden=false; if(pn) pn.hidden=true;
+  $("#w3Again").onclick=()=>renderForm(key,{});
+  window.__w3State="sent"; ok.scrollIntoView({behavior:"smooth",block:"start"});
+}
+const W3ERR={
+  setup:"ईमेलने पाठवण्याची सोय अजून सुरू झालेली नाही, म्हणून तुमची माहिती अजून कुठेही पाठवली गेलेली नाही. खालील “WhatsApp वर पाठवा” बटण दाबा — सर्व माहिती तयार मेसेजमध्ये आहे; WhatsApp मध्ये “Send” दाबा.",
+  offline:"इंटरनेट बंद दिसत आहे — तुमची {W} पाठवली गेलेली नाही. इंटरनेट सुरू करून “पुन्हा प्रयत्न करा” दाबा, किंवा खालील “WhatsApp वर पाठवा” बटण वापरा.",
+  network:"सर्व्हरशी संपर्क होऊ शकला नाही — तुमची {W} पाठवली गेलेली नाही. पुन्हा प्रयत्न करा, किंवा खालील “WhatsApp वर पाठवा” बटण वापरा.",
+  server:"{W} पाठवताना अडचण आली — ती पाठवली गेलेली नाही. पुन्हा प्रयत्न करा, किंवा खालील “WhatsApp वर पाठवा” बटण वापरा."
+};
+function showFallback(key,msg,url,kind,detail){
+  const W=adWord(key); w3Hide();
+  const er=$("#w3err");
+  er.innerHTML=`<h2>${kind==="setup"?"📲 WhatsApp वर पाठवा":`❌ ${W} पाठवता आली नाही`}</h2><p>${W3ERR[kind].replace(/\{W\}/g,W)}</p>${detail?`<p class="w3ref">तपशील: ${esc(detail)}</p>`:""}
+   <div class="sendrow"><a class="btn btn-w" id="fbWa" href="${url}" target="_blank" rel="noopener">${WA_ICON} WhatsApp वर पाठवा</a>${kind!=="setup"?`<button class="btn btn-o btn-sm" type="button" id="w3Retry">पुन्हा प्रयत्न करा</button>`:""}</div>`;
+  er.className=kind==="setup"?"note y":"w3err"; er.hidden=false;
+  $("#msgPreview").textContent=msg; $("#sentLink").href=url; $("#sentBox").hidden=false;
+  if(kind!=="setup"){ $("#sentH").textContent="तयार मेसेज (WhatsApp साठी)"; $("#sentP").textContent="“WhatsApp वर पाठवा” दाबल्यावर हा मेसेज Admin (+91 77750 57917) च्या WhatsApp वर उघडेल; तिथे “Send” दाबा."; }
+  $("#copyMsg").onclick=()=>copyText(msg);
+  const r=$("#w3Retry"); if(r) r.onclick=()=>{ const f=$("#theForm"); if(f) f.requestSubmit?f.requestSubmit():f.dispatchEvent(new Event("submit",{cancelable:true})); };
+  window.__lastWA=url; window.__w3State="fallback:"+kind;
+  er.scrollIntoView({behavior:"smooth",block:"start"});
+}
+async function submitForm(e){
   e.preventDefault(); const form=e.target, key=form.dataset.form;
+  if(form.dataset.busy==="1") return;
   $$(".bad",form).forEach(x=>x.classList.remove("bad")); $$(".err",form).forEach(x=>x.textContent="");
   const {v,errs}=validateForm(key,form); const keys=Object.keys(errs);
   if(keys.length){ keys.forEach(k=>{ const w=form.querySelector(`[data-k="${k}"]`); const er=$("#e_"+k); if(er)er.textContent=errs[k]; if(w){ const c=w.querySelector(".inp"); (c||w).classList.add("bad"); if(w.classList.contains("chk"))w.classList.add("bad"); } });
     const first=form.querySelector(`[data-k="${keys[0]}"]`); if(first){ first.scrollIntoView({behavior:"smooth",block:"center"}); const c=first.querySelector("input,select,textarea"); if(c)setTimeout(()=>c.focus({preventScroll:true}),300); }
     toast("कृपया लाल रंगातील माहिती तपासा"); return; }
   const msg=buildMessage(key,v), url=waLink(msg);
-  $("#msgPreview").textContent=msg; $("#sentLink").href=url; $("#sentBox").hidden=false;
-  $("#copyMsg").onclick=()=>copyText(msg);
-  window.__lastWA=url; openWA(url);
-  $("#sentBox").scrollIntoView({behavior:"smooth",block:"start"});
+  window.__lastWA=url;
+  const hp=form.querySelector('[name="botcheck"]');
+  if(hp&&hp.checked){ window.__w3State="bot"; return; }           /* honeypot: बॉट — काहीही पाठवू नका */
+  if(!w3fReady()){ showFallback(key,msg,url,"setup"); openWA(url); return; }   /* key नाही → थेट WhatsApp (ईमेल गेल्याचे भासवू नका) */
+  if(navigator.onLine===false){ showFallback(key,msg,url,"offline"); return; }
+  const ref=refStamp(), btn=$("#w3Submit"), label=btn?btn.innerHTML:"";
+  form.dataset.busy="1"; if(btn){ btn.disabled=true; btn.textContent="पाठवत आहे…"; }
+  let ctl=null, timer=null;
+  try{
+    if(window.AbortController){ ctl=new AbortController(); timer=setTimeout(()=>ctl.abort(),20000); }
+    const res=await fetch(W3F_URL,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(w3fPayload(key,v,ref)),signal:ctl?ctl.signal:undefined});
+    let j=null; try{ j=await res.json(); }catch(_){}
+    const okRes=res.ok&&j&&(j.success===true||j.success==="true");
+    if(okRes) showSuccess(key,v,ref);
+    else { const m=j&&(j.message||(j.body&&j.body.message)); showFallback(key,msg,url,"server",`त्रुटी ${res.status}${m?" — "+String(m).slice(0,140):""}`); }
+  }catch(err){
+    showFallback(key,msg,url,navigator.onLine===false?"offline":"network");
+  }finally{
+    if(timer)clearTimeout(timer); form.dataset.busy="";
+    if(btn){ btn.disabled=false; btn.innerHTML=label; }
+  }
 }
 
 /* ---------- AI templates (not AI: offline generators) ---------- */
