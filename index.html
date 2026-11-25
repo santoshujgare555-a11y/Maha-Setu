@@ -2079,7 +2079,7 @@ b.addEventListener('click',function(e){if(mv){e.stopImmediatePropagation();e.pre
 <style>
 /* Fo chat bubble: site-tinted (blue + gold ring), lifted above bottom nav */
 button[aria-controls="wajo-widget-frame"]{bottom:96px !important;background:#123a8a !important;box-shadow:0 4px 16px rgba(0,0,0,.35),0 0 0 3px #f0b429 !important;}
-#wajo-widget-frame{bottom:160px !important;}
+#wajo-widget-frame{bottom:160px !important;filter:invert(1) hue-rotate(180deg);}
 button[aria-controls="wajo-widget-frame"] img{filter:sepia(1) saturate(2) hue-rotate(195deg);}
 button[aria-controls="wajo-widget-frame"]::after{content:"";position:absolute;inset:0;border-radius:50%;background:#16407e;mix-blend-mode:multiply;opacity:.5;pointer-events:none;}
 </style>
