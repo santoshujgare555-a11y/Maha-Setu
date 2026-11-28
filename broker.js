@@ -12,6 +12,7 @@
   function waPhone(p){p=String(p||'').replace(/[^0-9]/g,''); if(p.length===10)p='91'+p; if(p.length===11&&p[0]==='0')p='91'+p.slice(1); return p;}
   function waLink(p,t){var txt='नमस्कार, महा सेतूवर पाहिलेल्या "'+t+'" या जाहिरातीबाबत माहिती हवी आहे.'; return 'https://wa.me/'+waPhone(p)+'?text='+encodeURIComponent(txt);}
   function reraOk(r){return /^P52[0-9]{9}$/i.test(String(r||'').replace(/[^a-zA-Z0-9]/g,'').trim());}
+function money(n){n=Number(n);return (n&&isFinite(n)&&n>0)?fmtINR(n):'';}
 
   function renderTabs(){var cur=$('.bk-tab.on');$$('.bk-tab').forEach(function(b){b.addEventListener('click',function(){
     $$('.bk-tab').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
@@ -43,7 +44,7 @@
     var d={id:'B'+Date.now().toString(36),phone:b.phone,bname:b.name,ptype:f.ptype.value,mode:f.mode.value,title:f.title.value.trim(),price:f.price.value.trim(),area:f.area.value.trim(),unit:f.unit.value,village:f.village.value.trim(),taluka:f.taluka.value.trim(),district:f.district.value.trim(),desc:f.desc.value.trim(),photos:f.photos.value.trim().split(/\n+/).filter(function(u){return /^https?:\/\//i.test(u.trim())}).slice(0,6),newproj:f.newproj.checked,rera:f.rera.value.trim(),brera:f.brera.value.trim(),added:new Date().toISOString().slice(0,10),ok:false,leads:0};
     if(!d.title){$('#bkPostMsg').textContent='जाहिरातीचं शीर्षक भरा.';return}
     if(d.newproj&&!reraOk(d.rera)){$('#bkPostMsg').textContent='नवीन प्रकल्पासाठी MahaRERA क्रमांक आवश्यक (उदा. P52100012345).';return}
-    listings.unshift(d); set(LSK.l,listings); f.reset(); f.newproj.checked=false;
+    listings.unshift(d); set(LSK.l,listings); f.reset(); f.newproj.checked=false; $('#bkReraWrap').hidden=true;
     $('#bkPostMsg').textContent='जाहिरात जतन झाली ✅ Admin पडताळल्यावर "✅ तपासले" होईल.';
     renderMine(); renderAll();
   }
