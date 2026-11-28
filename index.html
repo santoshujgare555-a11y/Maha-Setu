@@ -2181,7 +2181,7 @@ b.addEventListener('click',function(e){if(mv){e.stopImmediatePropagation();e.pre
 
   function waPhone(p){p=String(p||'').replace(/[^0-9]/g,''); if(p.length===10)p='91'+p; if(p.length===11&&p[0]==='0')p='91'+p.slice(1); return p;}
   function waLink(p,t){var txt='नमस्कार, महा सेतूवर पाहिलेल्या "'+t+'" या जाहिरातीबाबत माहिती हवी आहे.'; return 'https://wa.me/'+waPhone(p)+'?text='+encodeURIComponent(txt);}
-  function reraOk(r){return /^P52[0-9]{8}$/i.test(String(r||'').replace(/[^a-zA-Z0-9]/g,'').trim());}
+  function reraOk(r){return /^P52[0-9]{9}$/i.test(String(r||'').replace(/[^a-zA-Z0-9]/g,'').trim());}
 
   function renderTabs(){var cur=$('.bk-tab.on');$$('.bk-tab').forEach(function(b){b.addEventListener('click',function(){
     $$('.bk-tab').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
